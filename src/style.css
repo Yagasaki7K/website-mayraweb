@@ -5,10 +5,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: #181A1B;
+}
+
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0.0.0.0.3), transparent), url('./images/background.png');
+    background-image: linear-gradient(rgba(0.0.0.0.3), transparent);
+    background-image: url('./images/background.png');
     background-size: cover;
     background-position: center;
     padding: 0 8%;
@@ -53,7 +58,7 @@ nav ul li a {
 
 nav ul li a::after {
     content: '';
-    width: 50%;
+    width: 25%;
     height: 3px;
     position: absolute;
     bottom: -5px;
@@ -64,7 +69,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-    width: 50%;
+    width: 70%;
 }
 
 .text-box {
@@ -116,6 +121,12 @@ nav ul li a:hover::after {
     border: 2px solid #fff;
     display: flex;
     align-items: center;
+}
+
+.text-box a:hover {
+    color: #181A1B;
+    background: #fff;
+    transition: 1s;
 }
 
 .text-box a span {
